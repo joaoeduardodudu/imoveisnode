@@ -1,0 +1,31 @@
+extends ../layout
+block content
+	title Cadastro de Imovel
+	br
+	br
+	br
+	h1 Novo Imovel
+	br
+	a(href="/" title="Home",class="btn btn-primary") Voltar
+	br
+	br
+	form(method="POST", action="/imoveis", role="form")
+		div(class="form-group")
+			label Rua:
+			input(type="text", name="rua", class="form-control")
+		div(class="form-group")
+			label bairro:
+			input(type="text", name="bairro", class="form-control")
+		div(class="form-group")
+			label numero:
+			input(type="text", name="numero", class="form-control")
+		div(class="form-group")
+			label cidade:
+			input(type="text", name="cidade", class="form-control")
+		div(class="form-group")
+			label valor:
+			input(type="text", name="valor", class="form-control")
+		input(type="submit", id="salvar", value="Salvar", class="btn btn-primary")
+		br
+		br
+		br

@@ -1,0 +1,35 @@
+extends ../layout
+block content
+	title Imoveis
+	br
+	a(href="/" title="Home",class="btn btn-primary") Voltar
+	br
+	br
+	if messages.info
+		div(class="alert alert-success")
+			p= messages.info
+	br
+	table(class="table well")
+		thead
+			tr
+				th ID:
+				th rua:
+				th bairro:
+				th numero:
+				th cidade:
+				th valor:
+				th Ações:
+		tbody
+			each valor, i in lista
+				tr
+					td #{valor._id}
+					td #{valor.rua}
+					td #{valor.bairro}
+					td #{valor.numero}
+					td #{valor.cidade}
+					td #{valor.valor}
+					td
+						a(href="/imoveis/edit/#{valor._id}", title="Editar", class="btn btn-primary") Editar
+					td
+						a(href="/imoveis/delete/#{valor._id}", title="Excluir", class="btn btn-danger") Excluir
+	a(href="/imoveis/create" title="Cadastrar",class="btn btn-primary") Novo

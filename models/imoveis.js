@@ -6,7 +6,6 @@ module.exports = function()
 	var ImovelSchema =  new Schema(
 	{
 		rua:String,
-		data_cadastro: {type: Date, default: Date.now},
 		bairro: String,
 		numero:String,
 		cidade:String,
