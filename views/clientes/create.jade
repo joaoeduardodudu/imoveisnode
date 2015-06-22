@@ -1,0 +1,36 @@
+extends ../layout
+block content
+	title Cadastro de Clientes
+	br
+	br
+	br
+	h1 Novo Cliente
+	br
+	br
+	br
+	form(method="POST", action="/clientes", role="form")
+		div(class="form-group")
+			label Nome:
+			input(type="text", name="nome", class="form-control")
+		div(class="form-group")
+			label Email:
+			input(type="text", name="email", class="form-control")
+		div(class="form-group")
+			label Telefone:
+			input(type="text", name="telefone", class="form-control")
+		div(class="form-group")
+			label Rua:
+			input(type="text", name="rua", class="form-control")
+		div(class="form-group")
+			label bairro:
+			input(type="text", name="bairro", class="form-control")
+		div(class="form-group")
+			label numero:
+			input(type="text", name="numero", class="form-control")
+		div(class="form-group")
+			label cidade:
+			input(type="text", name="cidade", class="form-control")
+		input(type="submit", id="salvar", value="Salvar", class="btn btn-primary")
+		br
+		br
+		br

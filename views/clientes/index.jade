@@ -1,0 +1,32 @@
+extends ../layout
+block content
+	title Clientes
+	br
+	br
+	br
+	if messages.info
+		div(class="alert alert-success")
+			p= messages.info
+	br
+	table(class="table well")
+		thead
+			tr
+				th ID:
+				th nome:
+				th email:
+				th telefone:
+				th cidade:
+				th Ações:
+		tbody
+			each valor, i in lista
+				tr
+					td #{valor._id}
+					td #{valor.nome}
+					td #{valor.email}
+					td #{valor.telefone}
+					td #{valor.cidade}
+					td
+						a(href="/clientes/edit/#{valor._id}", title="Editar", class="btn btn-primary") Editar
+					td
+						a(href="/clientes/delete/#{valor._id}", title="Excluir", class="btn btn-danger") Excluir
+	a(href="/clientes/create" title="Cadastrar",class="btn btn-primary") Novo
