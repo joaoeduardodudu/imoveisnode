@@ -9,5 +9,5 @@ module.exports = function(app)
 
 	app.post('/imoveis',imoveis.insert);
 	app.post('/imoveis/edit/:id',imoveis.update);
-	//app.post('/alunos/delete/:id',alunos.remove);
+	//app.post('/clientes/delete/:id',clientes.remove);
 }
