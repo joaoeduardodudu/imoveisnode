@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "0.12"
+deploy:
+  provider: heroku
+  api_key:
+    secure: c1d9ae12-c279-4597-98e4-ad2722c45a05
+  app: imoveisnode
+  on:
+    repo: joaoeduardodudu/imoveisnode
