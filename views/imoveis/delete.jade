@@ -1,0 +1,31 @@
+extends ../layout
+block content
+	title Imobiliaria
+	br
+	br
+	br
+	h1 Exclusão de imovel
+	br
+	a(href="/" title="Home",class="btn btn-default") Voltar
+	br
+	br
+	form(method="POST", action="/imoveis/delete/#{value._id}", role="form")
+		div(class="form-group")
+			label Rua:
+			input(type="text", name="rua", class="form-control", value="#{value.nome}")
+		div(class="form-group")
+			label Bairro:
+			input(type="text", name="bairro", class="form-control", value="#{value.matricula}")
+		div(class="form-group")
+			label Numero:
+			input(type="text", name="numero", class="form-control", value="#{value.curso}")
+		div(class="form-group")
+			label Cidade:
+			input(type="text", name="cidade", class="form-control", value="#{value.turno}")
+		div(class="form-group")
+			label Valor:
+			input(type="text", name="valor", class="form-control",value="#{value.periodo}")
+		input(type="submit", value="Excluir", class="btn btn-primary")
+		br
+		br
+		br
