@@ -17,7 +17,7 @@ var app = express();
 
 
 //conectando com o banco
-mongoose.connect('mongodb://nodejspi:joaodudu:493010Tlb@ds061701.mongolab.com:61701/nodejspi',function(err)
+mongoose.connect('mongodb://joaodudu:493010Tlb@ds061701.mongolab.com:61701/nodejspi',function(err)
   {
     if(err)
     {
