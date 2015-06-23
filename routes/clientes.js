@@ -1,7 +1,7 @@
 module.exports = function(app) 
 {
-	var alunos = app.controllers.alunos;
-	app.get('/clientes', clientes.index);
+	var clientes = app.controllers.clientes;
+	app.get('/clientes/', clientes.index);
 	app.get('/clientes/create', clientes.create);
 	app.get('/clientes/delete/:id',clientes.remove);
 	app.get('/clientes/edit/:id', clientes.edit);

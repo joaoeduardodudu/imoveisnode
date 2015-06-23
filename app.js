@@ -17,13 +17,13 @@ var app = express();
 
 
 //conectando com o banco
-/*mongoose.connect('mongodb://nodejspi:joaodudu:493010Tlb@ds061701.mongolab.com:61701/nodejspi',function(err)
+mongoose.connect('mongodb://nodejspi:joaodudu:493010Tlb@ds061701.mongolab.com:61701/nodejspi',function(err)
   {
     if(err)
     {
       console.log('Erro: '+err+'ao conectar no mongo!');
     }
-  });*/
+  });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

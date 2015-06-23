@@ -1,6 +1,6 @@
 module.exports = function(app) 
 {
-	var alunos = app.controllers.alunos;
+	var imoveis = app.controllers.imoveis;
 	app.get('/imoveis', imoveis.index);
 	app.get('/imoveis/create', imoveis.create);
 	app.get('/imoveis/delete/:id',imoveis.remove);
