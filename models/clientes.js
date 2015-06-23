@@ -10,7 +10,7 @@ module.exports = function()
 		telefone:String,
 		rua:String,
 		bairro:String,
-		numero:int,
+		numero:Number,
 		cidade:String
 	});
 	return mongoose.model('Clientes', ClienteSchema);

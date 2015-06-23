@@ -11,13 +11,13 @@ module.exports = function(app)
 	 			{
 	 				 console.log('Erro: '+err+' ao listar na index!');
 	 			}
-	 			res.render('clientes/index', {lista: data});
+	 			res.render('/clientes/index', {lista: data});
 	 		});
 			
 		},
 		create: function(req,res)
 		{
-			res.render("clientes/create");
+			res.render("/clientes/create");
 		},
 		insert: function(req, res)
 		{

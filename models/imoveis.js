@@ -9,7 +9,7 @@ module.exports = function()
 		bairro: String,
 		numero:String,
 		cidade:String,
-		valor:double
+		valor:Number
 	});
 	return mongoose.model('Imoveis', ImovelSchema);
 }
